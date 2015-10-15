@@ -1,13 +1,13 @@
-package is.ru.stringcalculator;
+apckage is.ru.stringcalculator;
 
-public class Calculator {
+public class Calculator 
 
-	public static int add(String text){
+	public static int(x,y,z){
 		if(text.equals("")){
 			return 0;
 		}
 		else if(text.contains(",")){
-			return sum(splitNumbers(text));
+			return sum(splitNumbers(x+y+z));
 		}
 		else
 			return 1;
@@ -28,7 +28,6 @@ public class Calculator {
 		}
 		return total;
     }
-
 
 
 }
