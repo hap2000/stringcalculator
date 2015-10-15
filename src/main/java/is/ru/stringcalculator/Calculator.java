@@ -1,8 +1,8 @@
-apckage is.ru.stringcalculator;
+package is.ru.stringcalculator;
 
 public class Calculator 
 
-	public static int(x,y,z){
+	public static int add(x,y,z){
 		if(text.equals("")){
 			return 0;
 		}
