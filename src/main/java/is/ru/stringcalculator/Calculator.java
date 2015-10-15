@@ -2,7 +2,7 @@ package is.ru.stringcalculator;
 
 public class Calculator 
 {
-int x,y,z = 0;
+
 	public static int add(String text){
 		if(text.equals("")){
 			return 0;
