@@ -1,13 +1,14 @@
 package is.ru.stringcalculator;
 
 public class Calculator 
-
-	public static int add(x,y,z){
+{
+int x,y,z = 0;
+	public static int add(String text){
 		if(text.equals("")){
 			return 0;
 		}
 		else if(text.contains(",")){
-			return sum(splitNumbers(x+y+z));
+			return sum(splitNumbers(text));
 		}
 		else
 			return 1;
