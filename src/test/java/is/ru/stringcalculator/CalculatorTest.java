@@ -2,6 +2,7 @@ package is.ru.stringcalculator;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import is.ru.stringcalculator.Calculator; //Hlynur told me
 
 public class CalculatorTest {
 
