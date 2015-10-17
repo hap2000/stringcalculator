@@ -5,6 +5,7 @@ public class Calculator {
 	public static int add(String text){
 		return 1;
 	}
+}
 	/*
 
 	public static int add(String text){
@@ -34,4 +35,3 @@ public class Calculator {
 		return total;
     }
     */
-}
