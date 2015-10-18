@@ -21,11 +21,10 @@ public class Calculator {
 	private static int toInt(String number){
 		return Integer.parseInt(number);
 	}
-/*
+
 	private static String[] splitNumbers(String numbers){
 	    return numbers.split(",");
 	}
-*/
       
     private static int sum(String[] numbers){
  	    int total = 0;
@@ -34,6 +33,7 @@ public class Calculator {
 		}
 		return total;
     }
-    
 }
+
+
     

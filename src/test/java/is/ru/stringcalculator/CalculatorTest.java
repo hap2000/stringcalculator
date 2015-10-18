@@ -31,10 +31,12 @@ public class CalculatorTest {
     public void testThreeNumbers(){
     	assertEquals(3, Calculator.add("1,2,3"));
     }
+    
     @Test
 	public void testNewLinesBetweenNumbers() {
-    	assertEquals(0+1+2, Calculator.add("0,1n2"));
+    	assertEquals(6, Calculator.add("1\n2,3"));
 	}
+
 
 }
     
