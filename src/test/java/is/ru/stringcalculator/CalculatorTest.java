@@ -41,13 +41,28 @@ public class CalculatorTest {
 	public void testDifferentDelimiter(){
     	assertEquals(3, Calculator.add("//;\n1;2"));
 	}
-
-	Vantar "CALLING ADD WITH A NEGATIVE NUMBER WILL THROW AN EXCEPTION"
 */
+	@Test(expected = RuntimeException.class)
+	public  void testOneNegativeNumberThrowAnException() {
+    	Calculator.add("-1,2");
+		}
+	@Test
+	public  void testMultipleNegativeNumbersThrowAnException() {
+    	RuntimeException exception = null;
+    	try {
+    		Calculator.add("2,-4,3,-5");
+    	} 
+    	catch (RuntimeException e) {
+        	exception = e;
+    	}
+     		assertEquals("Negatives not allowed: [-1,-4,-5]", exception.getMessage());
+}
+/*
 	@Test
 	public  void testBiggerThan1000Ignored() {
     	assertEquals(2, Calculator.add("1001,2"));
 	}
+*/
 
 }
     
