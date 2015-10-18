@@ -6,6 +6,7 @@ public class Calculator {
 		return 0;
 	}
 */
+	
 	public static int add(String text){
 		if(text.equals("")) { 
 			return 0; 
@@ -33,18 +34,17 @@ public class Calculator {
 		}
 		return total;
     }
-/*
+
     private static int newLine(String numbers){
-    	int returnValue = 0;
-    	String[] numbersArray = numbers.split(",|n"); // Added |n to the split regex
+    	int value = 0;
+    	String[] numbersArray = numbers.split(",|n"); 
     	for (String number : numbersArray) {
         if (!number.trim().isEmpty()) {
-            returnValue += Integer.parseInt(number.trim());
-        }
+            value += Integer.parseInt(number.trim());
+        	}
+    	}
+    	return value;
     }
-    return returnValue;
-    }
-*/
 }
 
 
