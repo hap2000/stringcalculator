@@ -36,10 +36,18 @@ public class CalculatorTest {
 	public void testNewLinesBetweenNumbers() {
     	assertEquals(6, Calculator.add("1\n2,3"));
 	}
-*/
+
 	@Test
 	public void testDifferentDelimiter(){
     	assertEquals(3, Calculator.add("//;\n1;2"));
 	}
+
+	Vantar "CALLING ADD WITH A NEGATIVE NUMBER WILL THROW AN EXCEPTION"
+*/
+	@Test
+	public  void testBiggerThan1000Ignored() {
+    	assertEquals(2, Calculator.add("1001,2"));
+	}
+
 }
     
