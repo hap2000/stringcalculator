@@ -2,7 +2,9 @@ package is.ru.stringcalculator;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
-import is.ru.stringcalculator.Calculator; //Hlynur told me
+import is.ru.stringcalculator.Calculator; // Hlynur told me
+import org.junit.Rule; 
+import org.junit.rules.ExpectedException;
 
 public class CalculatorTest {
 
@@ -29,5 +31,10 @@ public class CalculatorTest {
     public void testThreeNumbers(){
     	assertEquals(3, Calculator.add("1,2,3"));
     }
-    
+    @Test
+	public void testNewLinesBetweenNumbers() {
+    	assertEquals(0+1+2, Calculator.add("0,1n2"));
+	}
+
 }
+    
