@@ -23,7 +23,7 @@ public class Calculator {
 	}
 
 	private static String[] splitNumbers(String numbers){
-	    return numbers.split(",");
+	    return numbers.split("");
 	}
       
     private static int sum(String[] numbers){
@@ -33,6 +33,18 @@ public class Calculator {
 		}
 		return total;
     }
+/*
+    private static int newLine(String numbers){
+    	int returnValue = 0;
+    	String[] numbersArray = numbers.split(",|n"); // Added |n to the split regex
+    	for (String number : numbersArray) {
+        if (!number.trim().isEmpty()) {
+            returnValue += Integer.parseInt(number.trim());
+        }
+    }
+    return returnValue;
+    }
+*/
 }
 
 
