@@ -1,6 +1,7 @@
 package is.ru.stringcalculator;
 
-public class Calculator {
+public class Calculator 
+{
 
 	public static int add(String text){
 		if(text.equals("")){
@@ -28,7 +29,6 @@ public class Calculator {
 		}
 		return total;
     }
-
 
 
 }
